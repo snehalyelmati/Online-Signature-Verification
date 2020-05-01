@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,400;1,600;1,700&display=swap");
+
+body {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+blockquote {
+  margin: 0em;
+  padding: 0em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 44px;
+}
+
+p {
+  margin: 0em;
+  padding: 0em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  text-align: center;
+  margin: 0;
+  padding: 0.2em 6em;
+}
+
+.logo-top {
+  width: 100px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .header ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container .header li a {
+  text-decoration: none;
+  color: black;
+  padding: 2em;
+  margin-top: 10em;
+  font-size: 0.8em;
+}
+
+.server {
+  width: 35%;
+  margin: 2.5em auto 3em 18%;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 45px;
+  margin-bottom: 0.4em;
+}
+
+.dot {
+  font-size: 75px;
+}
+
+.subhead {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 26px;
+  margin-bottom: 4em;
+}
+
+
+.arrow {
+  margin: 3.5em auto 7em auto;
+}
+
+h1,
+.subhead {
+  position: relative;
+  z-index: 3;
+}
+
+.blue-container {
+  width: 100%;
+  background: #2ebfff;
+  color: white;
+  border-top-left-radius: 40px;
+  transform: skewY(-2deg);
+  padding-top: 2em;
+}
+
+.blue-container .built {
+  font-size: 37px;
+  font-weight: 500;
+  font-style: italic;
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: start;
+  transform: skewY(2deg);
+}
+
+.blue-container ul {
+  transform: skewY(2deg);
+  display: flex;
+  justify-content: space-around;
+}
+
+.blue-container::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #2ebfff;
+  position: absolute;
+  right: 0px;
+  top: -39px;
+  z-index: -2;
+}
+
+.blue-container::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: -80px;
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.blue-container ul li {
+  margin: 1em auto 4em auto;
+  font-size: 30px;
+}
+
+.blue-container ul li:nth-child(2) {
+  margin-top: 2.3em;
+}
+
+.blue-container ul li:nth-child(3) {
+  margin-top: 1.7em;
+}
+
+.blue-container img {
+  margin: 2em 2em;
+}
+
+.gray-container {
+  background: #e9e9e9;
+  padding: 15em 11em 10em 11em;
+  margin-top: -3%;
+}
+
+figure {
+  margin: 0em;
+  padding: 0%;
+}
+
+.gray-container figcaption {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 0.2em;
+  font-weight: 600;
+  font-size: 43px;
+  font-style: italic;
+  color: #b62eff;
+}
+
+.software-stack ul {
+  margin: 8em 0em 3em 0em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.secondary-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.trynow-main,
+.trynow-secondary {
+  background: #6dffb6;
+  padding: 0.6em 3.5em;
+  margin-bottom: 3em;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 600;
+  color: black;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 3;
+}
+
+.footer-container {
+  width: 100%;
+  background: #214453;
+  color: white;
+  border-top-right-radius: 40px;
+  transform: skewY(2deg);
+  padding-bottom: 35px;
+}
+
+.footer-container::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: #214453;
+  position: absolute;
+  left: 0px;
+  top: -39px;
+  z-index: -2;
+}
+
+.footer-container::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: -80px;
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.footer-container .container {
+  transform: skewY(-2deg);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5em;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  padding: 2em;
+}
+
+.extra {
+  position: absolute;
+  width: 100%;
+  background: #214453;
+  height: 11%;
+  margin-top: -1.8%;
+}
+
+.address {
+  text-align: left;
+  font-size: 0.9em;
+  color: lightgrey;
+}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+  <img
+    src="{{url_for('static', filename='error.png')}}"
+    style="margin: 40px; width: 800px"
+    alt=""
+  />
+
+  <p style="margin-bottom: 6em; font-size: 2em;">File not found!</p>
+</div>
+{% endblock %}

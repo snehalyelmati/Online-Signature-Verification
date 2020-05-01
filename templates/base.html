@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSV</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="/" style="padding: 0.5em;">
+          <img
+            src="{{url_for('static', filename='logo.svg')}}"
+            alt=""
+            class="logo-top"
+          />
+        </a>
+        <nav>
+          <ul class="show-desktop hide-desktop" id="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    {% block content %} {% endblock %}
+
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <div>
+            <img
+              src="{{url_for('static', filename='logo_white.svg')}}"
+              alt=""
+              class="logo-bottom"
+            />
+            <p class="address">
+              Plot no: 99,<br />
+              Onyx Place,<br />
+              Hyderabad,<br />
+              India.
+            </p>
+          </div>
+
+          <ul class="footer-links">
+            <li><a href="#">Terms of Service</a></li>
+            <li></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="extra">
+      <div class="container">
+        <span></span>
+      </div>
+    </div>
+  </body>
+</html>
